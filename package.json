@@ -1,0 +1,1 @@
+{"name":"pear-social-vps","version":"1.0.0","private":true,"description":"Pear social network for Ubuntu and Supabase","engines":{"node":">=20"},"scripts":{"start":"node server.js"}}
