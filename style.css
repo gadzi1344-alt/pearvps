@@ -206,4 +206,19 @@ body.pear-liquid .nav-mobile,body.pear-liquid .left{background:#1a3024df;backdro
 .act.reposted{color:#1b9a66}.settings-tabs{margin-top:8px}.verification-settings h3{margin:0;color:#edf9f0;font-size:18px}.report-note a{overflow-wrap:anywhere}.report-card .row{flex-wrap:wrap;gap:8px}.notification-kind.repost{background:#1b9a66;color:white}
 
 /* Шапка профиля: ник, действия и описание не конкурируют за ширину. */
-.profile-identity h1{overflow-wrap:anywhere}.profile-handle-row{display:flex;align-items:center;flex-wrap:wrap;gap:8px 12px}.profile-handle{margin:0;overflow-wrap:anywhere}.profile-edit{min-height:34px;padding:6px 10px;font-size:12px;line-height:1.3}.profile-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.profile-box .profile-bio{white-space:pre-wrap;overflow-wrap:anywhere;margin:14px 0;line-height:1.6}.profile-box .row.post-meta{gap:8px 16px}
+.profile-heading{display:flex;align-items:center;gap:12px;min-width:0}.profile-identity{flex:1;min-width:0}.profile-identity h1{overflow-wrap:anywhere}.profile-handle{display:block;overflow-wrap:anywhere}.profile-actions{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:8px}.profile-box .profile-bio{white-space:pre-wrap;overflow-wrap:anywhere;margin:14px 0;line-height:1.6}.profile-box .row.post-meta{gap:8px 16px}
+@media(max-width:660px){.profile-heading{gap:8px}.profile-actions{max-width:49%}.profile-actions .quiet{font-size:12px;line-height:1.25;padding:8px 10px}.profile-edit{max-width:150px}.profile-box h1{font-size:22px}.profile-message{white-space:normal}}
+
+/* Liquid Glass: полупрозрачные поверхности, светлые кромки и глубокое размытие. */
+body.pear-liquid::before{inset:-25%;background:radial-gradient(ellipse at 15% 25%,#75d1a954,transparent 34%),radial-gradient(ellipse at 85% 35%,#7cb8d63b,transparent 35%),radial-gradient(ellipse at 50% 85%,#9bd6a62c,transparent 38%)}
+body.pear-liquid .card,body.pear-liquid .composer-mini,body.pear-liquid .modal,body.pear-liquid .chat-shell,body.pear-liquid .admin-intro,body.pear-liquid .report-card,body.pear-liquid .empty{
+ background:linear-gradient(145deg,rgba(196,239,218,.15),rgba(54,92,74,.18) 48%,rgba(12,31,23,.56));
+ border-color:rgba(211,255,228,.25);box-shadow:inset 0 1px 0 rgba(255,255,255,.19),inset 1px 0 0 rgba(255,255,255,.06),0 14px 36px rgba(0,0,0,.22);
+ -webkit-backdrop-filter:blur(24px) saturate(150%);backdrop-filter:blur(24px) saturate(150%);
+}
+body.pear-liquid .nav-mobile,body.pear-liquid .left{background:linear-gradient(145deg,rgba(180,229,207,.18),rgba(22,48,36,.67));border-color:rgba(217,255,231,.24);box-shadow:inset 0 1px 0 rgba(255,255,255,.18),0 12px 36px rgba(0,0,0,.34);-webkit-backdrop-filter:blur(28px) saturate(160%);backdrop-filter:blur(28px) saturate(160%)}
+body.pear-liquid .quiet,body.pear-liquid .settings-open,body.pear-liquid .settings-option,body.pear-liquid .search,body.pear-liquid .field{background:linear-gradient(145deg,rgba(219,255,234,.13),rgba(37,72,54,.31));border-color:rgba(222,255,233,.24);box-shadow:inset 0 1px 0 rgba(255,255,255,.13)}
+body.pear-liquid .quiet:hover,body.pear-liquid .settings-open:hover,body.pear-liquid .settings-option:hover{background:linear-gradient(145deg,rgba(221,255,234,.22),rgba(51,100,69,.42))}
+body.pear-liquid .primary,body.pear-liquid .nav-mobile button.create{box-shadow:inset 0 1px 0 rgba(255,255,255,.65),0 5px 18px rgba(25,207,117,.19)}
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){body.pear-liquid .card,body.pear-liquid .composer-mini,body.pear-liquid .modal,body.pear-liquid .chat-shell,body.pear-liquid .nav-mobile,body.pear-liquid .left,body.pear-liquid .admin-intro,body.pear-liquid .report-card,body.pear-liquid .empty{background:#172b20}}
+@media(prefers-reduced-transparency:reduce){body.pear-liquid .card,body.pear-liquid .composer-mini,body.pear-liquid .modal,body.pear-liquid .chat-shell,body.pear-liquid .nav-mobile,body.pear-liquid .left,body.pear-liquid .admin-intro,body.pear-liquid .report-card,body.pear-liquid .empty{background:#172b20;backdrop-filter:none;-webkit-backdrop-filter:none}}
