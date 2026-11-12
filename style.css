@@ -203,4 +203,4 @@ body.pear-liquid .nav-mobile,body.pear-liquid .left{background:#1a3024df;backdro
 @media(prefers-reduced-motion:reduce){.pear-provider{transition:none}}
 
 /* Репосты и заявки на верификацию */
-.act.reposted{color:#1b9a66}.verification-request-button{margin-top:16px}.report-note a{overflow-wrap:anywhere}.report-card .row{flex-wrap:wrap;gap:8px}.notification-kind.repost{background:#1b9a66;color:white}
+.act.reposted{color:#1b9a66}.settings-tabs{margin-top:8px}.verification-settings h3{margin:0;color:#edf9f0;font-size:18px}.report-note a{overflow-wrap:anywhere}.report-card .row{flex-wrap:wrap;gap:8px}.notification-kind.repost{background:#1b9a66;color:white}
