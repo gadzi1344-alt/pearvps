@@ -201,3 +201,6 @@ body.pear-liquid .nav-mobile,body.pear-liquid .left{background:#1a3024df;backdro
 .pear-login-error{color:#ffd0c9;background:#39241f;border:1px solid #634039;border-radius:10px;padding:12px 14px;margin:16px 0 0;font-size:14px;line-height:1.5;text-align:left;width:100%;overflow-wrap:anywhere}.pear-login-error[hidden]{display:none}.pear-login-hint{color:#a0aba2;font-size:13px;line-height:1.5;margin:22px 0 0}
 @media(max-width:480px){.pear-login-page{padding:24px 20px}.pear-login-card{padding:18px;border-radius:19px}.pear-login-content h1{font-size:24px}.pear-login-subtitle{margin-bottom:27px}.pear-login-logo{margin-bottom:24px}}
 @media(prefers-reduced-motion:reduce){.pear-provider{transition:none}}
+
+/* Репосты и заявки на верификацию */
+.act.reposted{color:#1b9a66}.verification-request-button{margin-top:16px}.report-note a{overflow-wrap:anywhere}.report-card .row{flex-wrap:wrap;gap:8px}.notification-kind.repost{background:#1b9a66;color:white}
